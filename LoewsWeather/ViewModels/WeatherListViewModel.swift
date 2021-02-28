@@ -52,8 +52,11 @@ class WeatherListViewModel: NSObject {
 			case let .success(forecast):
 				self?.forecasts = forecast
 			case let .failure(error):
-				self?.tableView?.setEmptyMessage("No results found for search: \(city)")
-				self?.delegate?.showError(error: error.localizedDescription)
+				self?.forecasts = nil
+				DispatchQueue.main.async {
+					self?.tableView?.setEmptyMessage("No results found for search: \(city)")
+					self?.delegate?.showError(error: error.localizedDescription)
+				}
 			}
 		}
 	}

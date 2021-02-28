@@ -62,7 +62,9 @@ extension WeatherListViewController: WeatherListDelegate {
 	}
 
 	func showError(error: String) {
-		//TODO: add error handling here
+		let alert = UIAlertController(title: "Error", message: error, preferredStyle: UIAlertController.Style.alert)
+		alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+		self.present(alert, animated: true, completion: nil)
 	}
 
 
