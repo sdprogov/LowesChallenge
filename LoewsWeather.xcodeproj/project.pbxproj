@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CBBEC2C625EB3874005DE7F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEC2C525EB3874005DE7F5 /* AppDelegate.swift */; };
 		CBBEC2C825EB3874005DE7F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEC2C725EB3874005DE7F5 /* SceneDelegate.swift */; };
-		CBBEC2CA25EB3874005DE7F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEC2C925EB3874005DE7F5 /* ViewController.swift */; };
 		CBBEC2CD25EB3874005DE7F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBBEC2CB25EB3874005DE7F5 /* Main.storyboard */; };
 		CBBEC2D025EB3874005DE7F5 /* LoewsWeather.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CBBEC2CE25EB3874005DE7F5 /* LoewsWeather.xcdatamodeld */; };
 		CBBEC2D225EB3875005DE7F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBBEC2D125EB3875005DE7F5 /* Assets.xcassets */; };
@@ -27,6 +26,8 @@
 		CBBEC32A25EB3FE3005DE7F5 /* WeatherFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEC32925EB3FE3005DE7F5 /* WeatherFetcher.swift */; };
 		CBBEC33225EB427F005DE7F5 /* Forecasts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEC33125EB427F005DE7F5 /* Forecasts.swift */; };
 		CBBEC33825EB4316005DE7F5 /* LoewsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEC33725EB4316005DE7F5 /* LoewsLogger.swift */; };
+		CBBEC34025EB4AF0005DE7F5 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEC33F25EB4AF0005DE7F5 /* WeatherCell.swift */; };
+		CBC464FD25EB4DD200CCAE13 /* WeatherListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC464FC25EB4DD200CCAE13 /* WeatherListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +51,6 @@
 		CBBEC2C225EB3874005DE7F5 /* LoewsWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoewsWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBBEC2C525EB3874005DE7F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBBEC2C725EB3874005DE7F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CBBEC2C925EB3874005DE7F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CBBEC2CC25EB3874005DE7F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBBEC2CF25EB3874005DE7F5 /* LoewsWeather.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LoewsWeather.xcdatamodel; sourceTree = "<group>"; };
 		CBBEC2D125EB3875005DE7F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,6 +73,8 @@
 		CBBEC32925EB3FE3005DE7F5 /* WeatherFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherFetcher.swift; sourceTree = "<group>"; };
 		CBBEC33125EB427F005DE7F5 /* Forecasts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecasts.swift; sourceTree = "<group>"; };
 		CBBEC33725EB4316005DE7F5 /* LoewsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoewsLogger.swift; sourceTree = "<group>"; };
+		CBBEC33F25EB4AF0005DE7F5 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		CBC464FC25EB4DD200CCAE13 /* WeatherListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,14 +125,15 @@
 		CBBEC2C425EB3874005DE7F5 /* LoewsWeather */ = {
 			isa = PBXGroup;
 			children = (
+				CBBEC34425EB4BFF005DE7F5 /* Cells */,
 				CBBEC33625EB4302005DE7F5 /* Logging */,
 				CBBEC32825EB3FC9005DE7F5 /* ModelFetchers */,
 				CBBEC2FC25EB38AD005DE7F5 /* Models */,
 				CBBEC2FB25EB3880005DE7F5 /* API */,
 				CBBEC2C525EB3874005DE7F5 /* AppDelegate.swift */,
 				CBBEC2C725EB3874005DE7F5 /* SceneDelegate.swift */,
-				CBBEC2C925EB3874005DE7F5 /* ViewController.swift */,
 				CBBEC2CB25EB3874005DE7F5 /* Main.storyboard */,
+				CBC464FC25EB4DD200CCAE13 /* WeatherListViewController.swift */,
 				CBBEC2D125EB3875005DE7F5 /* Assets.xcassets */,
 				CBBEC2D325EB3875005DE7F5 /* LaunchScreen.storyboard */,
 				CBBEC2D625EB3875005DE7F5 /* Info.plist */,
@@ -194,6 +197,14 @@
 				CBBEC33725EB4316005DE7F5 /* LoewsLogger.swift */,
 			);
 			path = Logging;
+			sourceTree = "<group>";
+		};
+		CBBEC34425EB4BFF005DE7F5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CBBEC33F25EB4AF0005DE7F5 /* WeatherCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,15 +340,16 @@
 				CBBEC32A25EB3FE3005DE7F5 /* WeatherFetcher.swift in Sources */,
 				CBBEC31A25EB3D79005DE7F5 /* ApiEnvironment.swift in Sources */,
 				CBBEC33225EB427F005DE7F5 /* Forecasts.swift in Sources */,
-				CBBEC2CA25EB3874005DE7F5 /* ViewController.swift in Sources */,
 				CBBEC31025EB3A42005DE7F5 /* Clouds.swift in Sources */,
 				CBBEC31525EB3A53005DE7F5 /* Wind.swift in Sources */,
+				CBC464FD25EB4DD200CCAE13 /* WeatherListViewController.swift in Sources */,
 				CBBEC31F25EB3E16005DE7F5 /* ApiRoute.swift in Sources */,
 				CBBEC2C625EB3874005DE7F5 /* AppDelegate.swift in Sources */,
 				CBBEC2C825EB3874005DE7F5 /* SceneDelegate.swift in Sources */,
 				CBBEC30625EB3A24005DE7F5 /* MainForecast.swift in Sources */,
 				CBBEC2D025EB3874005DE7F5 /* LoewsWeather.xcdatamodeld in Sources */,
 				CBBEC2FE25EB39A8005DE7F5 /* Forecast.swift in Sources */,
+				CBBEC34025EB4AF0005DE7F5 /* WeatherCell.swift in Sources */,
 				CBBEC33825EB4316005DE7F5 /* LoewsLogger.swift in Sources */,
 				CBBEC32425EB3F75005DE7F5 /* API.swift in Sources */,
 				CBBEC30B25EB3A32005DE7F5 /* Weather.swift in Sources */,

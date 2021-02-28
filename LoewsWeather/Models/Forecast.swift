@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct Forecast: Codable {
 	let overview: MainForecast
@@ -16,5 +17,19 @@ struct Forecast: Codable {
 	enum CodingKeys: String, CodingKey {
 		case overview = "main"
 		case weather, clouds, wind
+	}
+}
+
+extension Forecast {
+	var weatherIcon: UIImage {
+		let weatherDescription = self.weather.first?.briefDescription ?? ""
+		if weatherDescription.contains("rain") {
+			return #imageLiteral(resourceName: "rainy")
+		}
+		if self.clouds.coverage < 50 {
+			return #imageLiteral(resourceName: "sunny")
+		} else {
+			return #imageLiteral(resourceName: "cloudy")
+		}
 	}
 }
