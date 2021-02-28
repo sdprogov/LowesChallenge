@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB726B3025EB65BC00DA9607 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB726B2F25EB65BC00DA9607 /* UITableView+Extensions.swift */; };
 		CBBEC2C625EB3874005DE7F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEC2C525EB3874005DE7F5 /* AppDelegate.swift */; };
 		CBBEC2C825EB3874005DE7F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEC2C725EB3874005DE7F5 /* SceneDelegate.swift */; };
 		CBBEC2CD25EB3874005DE7F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBBEC2CB25EB3874005DE7F5 /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB726B2F25EB65BC00DA9607 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		CBBEC2C225EB3874005DE7F5 /* LoewsWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoewsWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBBEC2C525EB3874005DE7F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBBEC2C725EB3874005DE7F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				CBC4650C25EB606900CCAE13 /* Double+Extensions.swift */,
+				CB726B2F25EB65BC00DA9607 /* UITableView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 				CBBEC2D025EB3874005DE7F5 /* LoewsWeather.xcdatamodeld in Sources */,
 				CBC4650D25EB606900CCAE13 /* Double+Extensions.swift in Sources */,
 				CBBEC2FE25EB39A8005DE7F5 /* Forecast.swift in Sources */,
+				CB726B3025EB65BC00DA9607 /* UITableView+Extensions.swift in Sources */,
 				CBBEC34025EB4AF0005DE7F5 /* WeatherCell.swift in Sources */,
 				CBBEC33825EB4316005DE7F5 /* LoewsLogger.swift in Sources */,
 				CBBEC32425EB3F75005DE7F5 /* API.swift in Sources */,

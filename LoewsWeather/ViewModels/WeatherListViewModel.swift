@@ -18,6 +18,8 @@ class WeatherListViewModel: NSObject {
 	init(weatherView: UITableView) {
 		tableView = weatherView
 
+		tableView?.setEmptyMessage("Enter city name to search")
+
 		super.init()
 
 		tableView?.delegate = self
@@ -40,8 +42,10 @@ class WeatherListViewModel: NSObject {
 		sharedApi.getWeather(for: city) { [weak self] result in
 			switch result {
 			case let .success(forecast):
+				self?.tableView?.restore()
 				self?.forecasts = forecast
 			case let .failure(error):
+				self?.tableView?.setEmptyMessage("No results found for search: \(city)")
 				self?.delegate?.showError(error: error.localizedDescription)
 			}
 		}
