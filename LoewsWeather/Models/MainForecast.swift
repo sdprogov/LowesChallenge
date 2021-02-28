@@ -27,3 +27,12 @@ struct MainForecast: Codable {
 		case groundLevel = "grnd_level"
 	}
 }
+
+extension MainForecast {
+	var temperatureInFahrenheit: Int {
+		return Int(temperature - 273.15)
+	}
+	var feelsLikeTemperatureInFahrenheit: Int {
+		return Int(feelsLike - 273.15)
+	}
+}

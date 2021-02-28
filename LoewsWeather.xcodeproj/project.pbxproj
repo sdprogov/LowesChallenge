@@ -28,6 +28,7 @@
 		CBBEC33825EB4316005DE7F5 /* LoewsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEC33725EB4316005DE7F5 /* LoewsLogger.swift */; };
 		CBBEC34025EB4AF0005DE7F5 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEC33F25EB4AF0005DE7F5 /* WeatherCell.swift */; };
 		CBC464FD25EB4DD200CCAE13 /* WeatherListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC464FC25EB4DD200CCAE13 /* WeatherListViewController.swift */; };
+		CBC4650225EB578A00CCAE13 /* DetailedForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC4650125EB578A00CCAE13 /* DetailedForecastViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		CBBEC33725EB4316005DE7F5 /* LoewsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoewsLogger.swift; sourceTree = "<group>"; };
 		CBBEC33F25EB4AF0005DE7F5 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		CBC464FC25EB4DD200CCAE13 /* WeatherListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewController.swift; sourceTree = "<group>"; };
+		CBC4650125EB578A00CCAE13 /* DetailedForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedForecastViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,8 @@
 		CBBEC2C425EB3874005DE7F5 /* LoewsWeather */ = {
 			isa = PBXGroup;
 			children = (
+				CBC4650725EB5DFD00CCAE13 /* Storyboards */,
+				CBC4650625EB5DE700CCAE13 /* ViewControllers */,
 				CBBEC34425EB4BFF005DE7F5 /* Cells */,
 				CBBEC33625EB4302005DE7F5 /* Logging */,
 				CBBEC32825EB3FC9005DE7F5 /* ModelFetchers */,
@@ -132,10 +136,7 @@
 				CBBEC2FB25EB3880005DE7F5 /* API */,
 				CBBEC2C525EB3874005DE7F5 /* AppDelegate.swift */,
 				CBBEC2C725EB3874005DE7F5 /* SceneDelegate.swift */,
-				CBBEC2CB25EB3874005DE7F5 /* Main.storyboard */,
-				CBC464FC25EB4DD200CCAE13 /* WeatherListViewController.swift */,
 				CBBEC2D125EB3875005DE7F5 /* Assets.xcassets */,
-				CBBEC2D325EB3875005DE7F5 /* LaunchScreen.storyboard */,
 				CBBEC2D625EB3875005DE7F5 /* Info.plist */,
 				CBBEC2CE25EB3874005DE7F5 /* LoewsWeather.xcdatamodeld */,
 			);
@@ -205,6 +206,24 @@
 				CBBEC33F25EB4AF0005DE7F5 /* WeatherCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		CBC4650625EB5DE700CCAE13 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CBC464FC25EB4DD200CCAE13 /* WeatherListViewController.swift */,
+				CBC4650125EB578A00CCAE13 /* DetailedForecastViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CBC4650725EB5DFD00CCAE13 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CBBEC2CB25EB3874005DE7F5 /* Main.storyboard */,
+				CBBEC2D325EB3875005DE7F5 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +360,7 @@
 				CBBEC31A25EB3D79005DE7F5 /* ApiEnvironment.swift in Sources */,
 				CBBEC33225EB427F005DE7F5 /* Forecasts.swift in Sources */,
 				CBBEC31025EB3A42005DE7F5 /* Clouds.swift in Sources */,
+				CBC4650225EB578A00CCAE13 /* DetailedForecastViewController.swift in Sources */,
 				CBBEC31525EB3A53005DE7F5 /* Wind.swift in Sources */,
 				CBC464FD25EB4DD200CCAE13 /* WeatherListViewController.swift in Sources */,
 				CBBEC31F25EB3E16005DE7F5 /* ApiRoute.swift in Sources */,

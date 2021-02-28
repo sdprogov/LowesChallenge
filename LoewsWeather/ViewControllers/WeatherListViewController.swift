@@ -10,7 +10,7 @@ import UIKit
 class WeatherListViewController: UITableViewController {
 
 	private let searchController = UISearchController(searchResultsController: nil)
-	private var cityName = ""
+	private var selectedForecast: Forecast?
 
 	var forecasts: Forecasts? {
 		didSet {
@@ -23,7 +23,7 @@ class WeatherListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-		title = "Forecast"
+		title = "Search"
 
 		searchController.searchResultsUpdater = self
 		searchController.obscuresBackgroundDuringPresentation = false
@@ -33,6 +33,13 @@ class WeatherListViewController: UITableViewController {
 		navigationItem.searchController = searchController
 		definesPresentationContext = true
     }
+
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if let detailedForecastVC = segue.destination as? DetailedForecastViewController {
+			detailedForecastVC.forecast = selectedForecast
+			detailedForecastVC.title = searchController.searchBar.text
+		}
+	}
 
 
     // MARK: - Table view data source
@@ -56,6 +63,12 @@ class WeatherListViewController: UITableViewController {
 
         return cell
     }
+
+	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		selectedForecast = forecasts?.list[indexPath.row]
+
+		performSegue(withIdentifier: "Detailed", sender: nil)
+	}
 
 }
 

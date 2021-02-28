@@ -15,7 +15,7 @@ class WeatherCell: UITableViewCell {
 
 	func populate(_ forecast: Forecast) {
 		weatherImage.image = forecast.weatherIcon
-		temperature.text = "Temp: \(forecast.overview.temperature)"
+		temperature.text = "Temp: \(forecast.overview.temperatureInFahrenheit)"
 		if let weather = forecast.weather.first {
 			weatherDescription.text = weather.briefDescription
 		}
