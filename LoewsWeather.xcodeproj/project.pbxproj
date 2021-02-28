@@ -16,6 +16,17 @@
 		CBBEC2D525EB3875005DE7F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBBEC2D325EB3875005DE7F5 /* LaunchScreen.storyboard */; };
 		CBBEC2E025EB3875005DE7F5 /* LoewsWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEC2DF25EB3875005DE7F5 /* LoewsWeatherTests.swift */; };
 		CBBEC2EB25EB3875005DE7F5 /* LoewsWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEC2EA25EB3875005DE7F5 /* LoewsWeatherUITests.swift */; };
+		CBBEC2FE25EB39A8005DE7F5 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEC2FD25EB39A8005DE7F5 /* Forecast.swift */; };
+		CBBEC30625EB3A24005DE7F5 /* MainForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEC30525EB3A24005DE7F5 /* MainForecast.swift */; };
+		CBBEC30B25EB3A32005DE7F5 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEC30A25EB3A32005DE7F5 /* Weather.swift */; };
+		CBBEC31025EB3A42005DE7F5 /* Clouds.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEC30F25EB3A42005DE7F5 /* Clouds.swift */; };
+		CBBEC31525EB3A53005DE7F5 /* Wind.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEC31425EB3A53005DE7F5 /* Wind.swift */; };
+		CBBEC31A25EB3D79005DE7F5 /* ApiEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEC31925EB3D79005DE7F5 /* ApiEnvironment.swift */; };
+		CBBEC31F25EB3E16005DE7F5 /* ApiRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEC31E25EB3E16005DE7F5 /* ApiRoute.swift */; };
+		CBBEC32425EB3F75005DE7F5 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEC32325EB3F75005DE7F5 /* API.swift */; };
+		CBBEC32A25EB3FE3005DE7F5 /* WeatherFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEC32925EB3FE3005DE7F5 /* WeatherFetcher.swift */; };
+		CBBEC33225EB427F005DE7F5 /* Forecasts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEC33125EB427F005DE7F5 /* Forecasts.swift */; };
+		CBBEC33825EB4316005DE7F5 /* LoewsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEC33725EB4316005DE7F5 /* LoewsLogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +62,17 @@
 		CBBEC2E625EB3875005DE7F5 /* LoewsWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoewsWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBBEC2EA25EB3875005DE7F5 /* LoewsWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoewsWeatherUITests.swift; sourceTree = "<group>"; };
 		CBBEC2EC25EB3875005DE7F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBBEC2FD25EB39A8005DE7F5 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		CBBEC30525EB3A24005DE7F5 /* MainForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainForecast.swift; sourceTree = "<group>"; };
+		CBBEC30A25EB3A32005DE7F5 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		CBBEC30F25EB3A42005DE7F5 /* Clouds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clouds.swift; sourceTree = "<group>"; };
+		CBBEC31425EB3A53005DE7F5 /* Wind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wind.swift; sourceTree = "<group>"; };
+		CBBEC31925EB3D79005DE7F5 /* ApiEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEnvironment.swift; sourceTree = "<group>"; };
+		CBBEC31E25EB3E16005DE7F5 /* ApiRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRoute.swift; sourceTree = "<group>"; };
+		CBBEC32325EB3F75005DE7F5 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		CBBEC32925EB3FE3005DE7F5 /* WeatherFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherFetcher.swift; sourceTree = "<group>"; };
+		CBBEC33125EB427F005DE7F5 /* Forecasts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecasts.swift; sourceTree = "<group>"; };
+		CBBEC33725EB4316005DE7F5 /* LoewsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoewsLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +123,10 @@
 		CBBEC2C425EB3874005DE7F5 /* LoewsWeather */ = {
 			isa = PBXGroup;
 			children = (
+				CBBEC33625EB4302005DE7F5 /* Logging */,
+				CBBEC32825EB3FC9005DE7F5 /* ModelFetchers */,
+				CBBEC2FC25EB38AD005DE7F5 /* Models */,
+				CBBEC2FB25EB3880005DE7F5 /* API */,
 				CBBEC2C525EB3874005DE7F5 /* AppDelegate.swift */,
 				CBBEC2C725EB3874005DE7F5 /* SceneDelegate.swift */,
 				CBBEC2C925EB3874005DE7F5 /* ViewController.swift */,
@@ -129,6 +155,45 @@
 				CBBEC2EC25EB3875005DE7F5 /* Info.plist */,
 			);
 			path = LoewsWeatherUITests;
+			sourceTree = "<group>";
+		};
+		CBBEC2FB25EB3880005DE7F5 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CBBEC31925EB3D79005DE7F5 /* ApiEnvironment.swift */,
+				CBBEC31E25EB3E16005DE7F5 /* ApiRoute.swift */,
+				CBBEC32325EB3F75005DE7F5 /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CBBEC2FC25EB38AD005DE7F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CBBEC2FD25EB39A8005DE7F5 /* Forecast.swift */,
+				CBBEC30525EB3A24005DE7F5 /* MainForecast.swift */,
+				CBBEC30A25EB3A32005DE7F5 /* Weather.swift */,
+				CBBEC30F25EB3A42005DE7F5 /* Clouds.swift */,
+				CBBEC31425EB3A53005DE7F5 /* Wind.swift */,
+				CBBEC33125EB427F005DE7F5 /* Forecasts.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CBBEC32825EB3FC9005DE7F5 /* ModelFetchers */ = {
+			isa = PBXGroup;
+			children = (
+				CBBEC32925EB3FE3005DE7F5 /* WeatherFetcher.swift */,
+			);
+			path = ModelFetchers;
+			sourceTree = "<group>";
+		};
+		CBBEC33625EB4302005DE7F5 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				CBBEC33725EB4316005DE7F5 /* LoewsLogger.swift */,
+			);
+			path = Logging;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +326,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBBEC32A25EB3FE3005DE7F5 /* WeatherFetcher.swift in Sources */,
+				CBBEC31A25EB3D79005DE7F5 /* ApiEnvironment.swift in Sources */,
+				CBBEC33225EB427F005DE7F5 /* Forecasts.swift in Sources */,
 				CBBEC2CA25EB3874005DE7F5 /* ViewController.swift in Sources */,
+				CBBEC31025EB3A42005DE7F5 /* Clouds.swift in Sources */,
+				CBBEC31525EB3A53005DE7F5 /* Wind.swift in Sources */,
+				CBBEC31F25EB3E16005DE7F5 /* ApiRoute.swift in Sources */,
 				CBBEC2C625EB3874005DE7F5 /* AppDelegate.swift in Sources */,
 				CBBEC2C825EB3874005DE7F5 /* SceneDelegate.swift in Sources */,
+				CBBEC30625EB3A24005DE7F5 /* MainForecast.swift in Sources */,
 				CBBEC2D025EB3874005DE7F5 /* LoewsWeather.xcdatamodeld in Sources */,
+				CBBEC2FE25EB39A8005DE7F5 /* Forecast.swift in Sources */,
+				CBBEC33825EB4316005DE7F5 /* LoewsLogger.swift in Sources */,
+				CBBEC32425EB3F75005DE7F5 /* API.swift in Sources */,
+				CBBEC30B25EB3A32005DE7F5 /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
