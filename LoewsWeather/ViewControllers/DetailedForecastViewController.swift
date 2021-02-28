@@ -20,8 +20,8 @@ class DetailedForecastViewController: UIViewController {
 		guard let forecast = forecast else { return }
 
 		weatherIcon.image = forecast.weatherIcon
-		temperature.text = String(forecast.overview.temperatureInFahrenheit)
-		feelsLike.text = "Feels like: \(String(forecast.overview.feelsLikeTemperatureInFahrenheit))"
+		temperature.text = String(forecast.overview.temperature.getFahrenheitToNearestDegree)
+		feelsLike.text = "Feels like: \(String(forecast.overview.feelsLike.getFahrenheitToNearestDegree))"
 		if let weather = forecast.weather.first {
 			clouds.text = weather.briefDescription
 		}

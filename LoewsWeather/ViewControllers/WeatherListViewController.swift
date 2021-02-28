@@ -11,14 +11,7 @@ class WeatherListViewController: UITableViewController {
 
 	private let searchController = UISearchController(searchResultsController: nil)
 	private var selectedForecast: Forecast?
-
-	var forecasts: Forecasts? {
-		didSet {
-			DispatchQueue.main.async {
-				self.tableView.reloadData()
-			}
-		}
-	}
+	private var viewModel: WeatherListViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +25,9 @@ class WeatherListViewController: UITableViewController {
 
 		navigationItem.searchController = searchController
 		definesPresentationContext = true
+
+		viewModel = WeatherListViewModel(weatherView: tableView)
+		viewModel?.delegate = self
     }
 
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -39,35 +35,6 @@ class WeatherListViewController: UITableViewController {
 			detailedForecastVC.forecast = selectedForecast
 			detailedForecastVC.title = searchController.searchBar.text
 		}
-	}
-
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		guard let forecasts = forecasts else { return 0 }
-		return forecasts.list.count
-    }
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		guard let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath) as? WeatherCell, let forecast = forecasts?.list[indexPath.row]  else { return UITableViewCell() }
-
-
-		cell.populate(forecast)
-
-        // Configure the cell...
-
-        return cell
-    }
-
-	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		selectedForecast = forecasts?.list[indexPath.row]
-
-		performSegue(withIdentifier: "Detailed", sender: nil)
 	}
 
 }
@@ -84,14 +51,19 @@ extension WeatherListViewController: UISearchBarDelegate {
 			// TODO: return error
 			return
 		}
-		sharedApi.getWeather(for: cityName) { [unowned self] result in
-			switch result {
-			case let .success(forecast):
-				self.forecasts = forecast
-				print("This is the forecast: \(forecast)")
-			case let .failure(error):
-				print("This is the error: \(error)")
-			}
-		}
+		viewModel?.findWeather(for: cityName)
 	}
+}
+
+extension WeatherListViewController: WeatherListDelegate {
+	func selected(forecast: Forecast) {
+		selectedForecast = forecast
+		performSegue(withIdentifier: "Detailed", sender: nil)
+	}
+
+	func showError(error: String) {
+		//TODO: add error handling here
+	}
+
+
 }
